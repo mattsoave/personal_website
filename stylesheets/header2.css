@@ -1,0 +1,455 @@
+header,
+header div#header-container,
+header div#header-container * {
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.42, 0.41, 0, 1);
+}
+header#main-header {
+  background-color: #FFF;
+  box-shadow: 0px 4px 0px 0px rgba(55, 101, 137, 0.04);
+}
+header#main-header div#header-container {
+  width: 100%;
+  padding: 50px;
+  position: relative;
+  margin: 0px auto;
+}
+header#main-header div#header-container * {
+  margin: 0;
+  display: inline;
+  position: absolute;
+}
+header#main-header div#header-container h1 {
+  color: #222;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  line-height: 1;
+}
+header#main-header div#header-container h1 a {
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  transition-duration: 0;
+}
+header#main-header div#header-container p#job-title {
+  color: #222;
+}
+header#main-header div#header-container .home-hiders {
+  opacity: 0;
+  transition-duration: .5s;
+  -webkit-animation: fadein;
+}
+header#main-header div#header-container .navs {
+  color: #222;
+  line-height: 1.25;
+  font-weight: 300;
+}
+header#main-header.home {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 4px 0px 0px rgba(55, 101, 137, 0);
+}
+header#main-header.home div#header-container {
+  margin: 0 auto;
+}
+header#main-header.home div#header-container p {
+  line-height: 1.25;
+}
+/*
+---------------------------
+Non-home header
+---------------------------
+*/
+header#main-header div#header-container {
+  /* When screen is wider than 1250px, cap the width */
+  /* Horizontal nav */
+  /* Vertical nav non-mobile */
+  /* H1 and Job Title sizing and positioning non-mobile */
+  /* H1 and Job Title sizing and positioning mobile */
+  /* Vertical nav mobile */
+}
+header#main-header div#header-container .navs.nav-active {
+  font-weight: bold;
+}
+header#main-header div#header-container p#job-title span {
+  transition-duration: 0;
+}
+@media (min-width: 1250px) {
+  header#main-header div#header-container {
+    width: 1200px;
+  }
+}
+@media (min-width: 750px) {
+  header#main-header div#header-container .navs {
+    top: 110px;
+    font-size: 18px;
+  }
+  header#main-header div#header-container #nav-1 {
+    right: 234px;
+  }
+  header#main-header div#header-container #nav-2 {
+    right: 138px;
+  }
+  header#main-header div#header-container #nav-3 {
+    right: 50px;
+  }
+}
+@media (min-width: 530px) and (max-width: 749px) {
+  header#main-header div#header-container .navs {
+    font-size: 18px;
+  }
+  header#main-header div#header-container #nav-1 {
+    top: 42px;
+    right: 50px;
+  }
+  header#main-header div#header-container #nav-2 {
+    top: 76px;
+    right: 50px;
+  }
+  header#main-header div#header-container #nav-3 {
+    top: 110px;
+    right: 50px;
+  }
+}
+@media (min-width: 530px) {
+  header#main-header div#header-container {
+    height: 170px;
+  }
+  header#main-header div#header-container h1 {
+    top: 40px;
+    left: 50px;
+    font-size: 60px;
+  }
+  header#main-header div#header-container p#job-title {
+    top: 110px;
+    left: 50px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 529px) {
+  header#main-header div#header-container {
+    height: 100px;
+  }
+  header#main-header div#header-container h1 {
+    top: 20px;
+    left: 20px;
+    font-size: 32px;
+  }
+  header#main-header div#header-container p {
+    font-size: 14px;
+  }
+  header#main-header div#header-container p#job-title {
+    top: 62px;
+    left: 20px;
+    font-size: 14px;
+  }
+  header#main-header div#header-container p#job-title span {
+    display: none;
+  }
+  header#main-header div#header-container p#job-title:after {
+    content: "Interaction + UX Designer";
+    transition-duration: 0;
+  }
+  header#main-header div#header-container .navs {
+    font-size: 14px;
+  }
+  header#main-header div#header-container #nav-1 {
+    top: 20px;
+    right: 20px;
+  }
+  header#main-header div#header-container #nav-2 {
+    top: 41px;
+    right: 20px;
+  }
+  header#main-header div#header-container #nav-3 {
+    top: 62px;
+    right: 20px;
+  }
+}
+/*
+---------------------------
+Home header
+---------------------------
+*/
+/*@media (min-width: 850px) and (min-height: 575px) {*/
+@media (min-width: 850px) {
+  header#main-header div#header-container p {
+    font-size: 18px;
+  }
+  header#main-header div#header-container .home-hiders {
+    opacity: 0;
+    transition-duration: .5s;
+    -webkit-animation: fadein;
+  }
+  header#main-header div#header-container .home-nav-descs {
+    width: 540px;
+    right: 0px;
+  }
+  header#main-header div#header-container h1 {
+    -webkit-animation: fadein .33s;
+  }
+  header#main-header div#header-container .nav-icons {
+    left: 0px;
+    width: 40px;
+  }
+  header#main-header div#header-container #home-hider-1 {
+    top: 100px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-2 {
+    top: 150px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-3 {
+    top: 180px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-4 {
+    top: 230px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-5 {
+    top: 370px;
+  }
+  header#main-header div#header-container #home-hider-6 {
+    top: 430px;
+  }
+  header#main-header div#header-container #home-hider-7 {
+    top: 490px;
+  }
+  header#main-header div#header-container #nav-icon-projects {
+    top: 365px;
+  }
+  header#main-header div#header-container #nav-icon-writing {
+    top: 425px;
+  }
+  header#main-header div#header-container #nav-icon-about {
+    top: 485px;
+  }
+  header#main-header.home div#header-container {
+    width: 700px;
+  }
+  header#main-header.home div#header-container h1 {
+    top: 53px;
+    left: 80px;
+    font-size: 80px;
+  }
+  header#main-header.home div#header-container p,
+  header#main-header.home div#header-container p#job-title {
+    font-size: 24px;
+  }
+  header#main-header.home div#header-container p#job-title {
+    top: 150px;
+    left: 74px;
+  }
+  header#main-header.home div#header-container .home-hiders {
+    opacity: 1;
+  }
+  header#main-header.home div#header-container .navs {
+    font-size: 24px;
+  }
+  header#main-header.home div#header-container #nav-1 {
+    top: 370px;
+    right: 550px;
+  }
+  header#main-header.home div#header-container #nav-2 {
+    top: 430px;
+    right: 563px;
+  }
+  header#main-header.home div#header-container #nav-3 {
+    top: 490px;
+    right: 576px;
+  }
+}
+/* need to figure out height 
+@media (min-width: 600px) and (max-width: 849px),
+(min-height: 20px) and (max-height: 574px) {*/
+@media (min-width: 600px) and (max-width: 849px) {
+  header#main-header div#header-container p {
+    font-size: 18px;
+  }
+  header#main-header div#header-container .home-hiders {
+    opacity: 0;
+    transition-duration: .5s;
+    -webkit-animation: fadein;
+  }
+  header#main-header div#header-container .home-nav-descs {
+    width: 405px;
+    right: 0px;
+  }
+  header#main-header div#header-container h1 {
+    -webkit-animation: fadein .33s;
+  }
+  header#main-header div#header-container .nav-icons {
+    left: 0px;
+    width: 30px;
+  }
+  header#main-header div#header-container #home-hider-1 {
+    top: 100px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-2 {
+    top: 140px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-3 {
+    top: 164px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-4 {
+    top: 204px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-5 {
+    top: 300px;
+  }
+  header#main-header div#header-container #home-hider-6 {
+    top: 350px;
+  }
+  header#main-header div#header-container #home-hider-7 {
+    top: 400px;
+  }
+  header#main-header div#header-container #nav-icon-projects {
+    top: 297px;
+  }
+  header#main-header div#header-container #nav-icon-writing {
+    top: 347px;
+  }
+  header#main-header div#header-container #nav-icon-about {
+    top: 397px;
+  }
+  header#main-header.home div#header-container {
+    width: 525px;
+  }
+  header#main-header.home div#header-container h1 {
+    top: 67px;
+    left: 64px;
+    font-size: 60px;
+  }
+  header#main-header.home div#header-container p,
+  header#main-header.home div#header-container p#job-title {
+    font-size: 18px;
+  }
+  header#main-header.home div#header-container p#job-title {
+    top: 140px;
+    left: 56px;
+  }
+  header#main-header.home div#header-container .home-hiders {
+    opacity: 1;
+  }
+  header#main-header.home div#header-container .navs {
+    font-size: 18px;
+  }
+  header#main-header.home div#header-container #nav-1 {
+    top: 300px;
+    right: 412.5px;
+  }
+  header#main-header.home div#header-container #nav-2 {
+    top: 350px;
+    right: 422.25px;
+  }
+  header#main-header.home div#header-container #nav-3 {
+    top: 400px;
+    right: 432px;
+  }
+}
+@media (max-width: 599px) {
+  header#main-header div#header-container p {
+    font-size: 18px;
+  }
+  header#main-header div#header-container .home-hiders {
+    opacity: 0;
+    transition-duration: .5s;
+    -webkit-animation: fadein;
+  }
+  header#main-header div#header-container .home-nav-descs {
+    width: 270px;
+    right: 0px;
+    display: none;
+  }
+  header#main-header div#header-container h1 {
+    -webkit-animation: fadein .33s;
+  }
+  header#main-header div#header-container .nav-icons {
+    left: 90px;
+    width: 30px;
+  }
+  header#main-header div#header-container #home-hider-1 {
+    top: 50px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-2 {
+    top: 83px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-3 {
+    top: 103px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-4 {
+    top: 136px;
+    left: 0px;
+  }
+  header#main-header div#header-container #home-hider-5 {
+    top: 180px;
+  }
+  header#main-header div#header-container #home-hider-6 {
+    top: 215px;
+  }
+  header#main-header div#header-container #home-hider-7 {
+    top: 250px;
+  }
+  header#main-header div#header-container #nav-icon-projects {
+    top: 248px;
+  }
+  header#main-header div#header-container #nav-icon-writing {
+    top: 283px;
+  }
+  header#main-header div#header-container #nav-icon-about {
+    top: 318px;
+  }
+  header#main-header.home div#header-container {
+    width: 310px;
+  }
+  header#main-header.home div#header-container h1 {
+    top: 31px;
+    left: 52px;
+    font-size: 40px;
+  }
+  header#main-header.home div#header-container p,
+  header#main-header.home div#header-container p#job-title {
+    font-size: 16px;
+  }
+  header#main-header.home div#header-container p#job-title {
+    top: 83px;
+    left: 49px;
+  }
+  header#main-header.home div#header-container .home-hiders {
+    opacity: 1;
+  }
+  header#main-header.home div#header-container .navs {
+    font-size: 18px;
+  }
+  header#main-header.home div#header-container #nav-1 {
+    top: 250px;
+    right: 100px;
+  }
+  header#main-header.home div#header-container #nav-2 {
+    top: 285px;
+    right: 110px;
+  }
+  header#main-header.home div#header-container #nav-3 {
+    top: 320px;
+    right: 120px;
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

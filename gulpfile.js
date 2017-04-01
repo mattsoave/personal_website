@@ -31,5 +31,5 @@ gulp.task("js", function() {
 gulp.task('css', function () {
   return gulp.src('./stylesheets/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./stylesheets/build'));
+    .pipe(gulp.dest('./stylesheets'));
 });

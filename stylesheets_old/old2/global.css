@@ -1,0 +1,180 @@
+/* Define block elements as border-box and relative */
+div,
+header,
+main,
+article,
+footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+}
+html {
+  overflow-y: scroll;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  font-size: 16px;
+}
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #555;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  /*
+	background:
+		url(../assets/angles-01.png),
+		url(../assets/angles-02.png),
+		url(../assets/angles-03.png),
+		url(../assets/angles-04.png),
+		#EEEEEE;
+	background-repeat: 
+		no-repeat, 
+		no-repeat, 
+		no-repeat, 
+		no-repeat;
+	background-position: 
+		top left,
+		top right, 
+		bottom left, 
+		bottom right;
+	background-attachment:fixed;
+	*/
+  background-color: #EEEEEE;
+}
+a {
+  color: #333333;
+  font-weight: 400;
+}
+a:visited {
+  color: inherit;
+}
+a[target="_blank"]:after {
+  content: url("../assets/new_tab.svg");
+}
+p {
+  line-height: 1.5;
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 580px) {
+  p,
+  li,
+  dl {
+    font-size: 14px;
+  }
+}
+ol {
+  list-style-type: decimal;
+}
+ul {
+  list-style-type: disc;
+}
+ol,
+ul {
+  margin-left: 2em;
+}
+li {
+  line-height: 1.5;
+  margin: 1em 0;
+}
+i,
+em {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: 400;
+}
+figure figcaption {
+  line-height: 1.5;
+}
+code {
+  padding: 2px;
+  background-color: #FCFCFC;
+  border: 1px solid #EEE;
+  border-radius: 2px;
+  font-family: monospace;
+}
+main > div {
+  max-width: 1200px;
+  /* @media (min-width: 750px) {
+			padding: 0 50px;
+		}
+		
+		@media (max-width: 749px) {
+			padding: 0 20px;
+		} */
+  margin: 20px auto;
+}
+@media (min-width: 530px) {
+  main > div {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 529px) {
+  main > div {
+    padding: 0 20px;
+  }
+}
+main > div h1,
+main > div p {
+  margin: 1em 0;
+}
+main > div > * {
+  /*margin: 0 0 0 10px;*/
+  margin: 0;
+}
+main > div > header h1 {
+  font-weight: bold;
+  font-family: "Roboto Condensed", serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 580px) {
+  main > div > header h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 579px) {
+  main > div > header h1 {
+    font-size: 24px;
+  }
+}
+main > div p.up-one-level a {
+  font-weight: 300;
+  color: #666666;
+}
+main > div p.up-one-level a:hover {
+  color: #666666;
+}
+main > div article {
+  background-color: #ffffff;
+  box-shadow: 3px 3px 0px 0px rgba(55, 101, 137, 0.04);
+  border-radius: 2px;
+}
+main > div article > header {
+  margin: 0;
+}
+main > div article > header h1 {
+  margin-top: 0;
+}
+main > div article h1 {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 400;
+  line-height: 1.25;
+}
+body > footer {
+  background-color: #FFF;
+  margin: 20px 0 0;
+  height: 50px;
+}

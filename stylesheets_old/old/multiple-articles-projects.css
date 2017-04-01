@@ -1,0 +1,7 @@
+main > div.multi-articles-projects {
+  max-width: 1200px;
+}
+main > div.multi-articles-projects article {
+  /*border-top: 20px solid;
+		border-bottom: 10px solid;*/
+}

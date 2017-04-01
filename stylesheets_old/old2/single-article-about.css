@@ -1,0 +1,67 @@
+@media (max-width: 999px) {
+  div.single-article-about article aside dl div.metadata {
+    /*dd {
+							margin-right: 15px;
+						}*/
+    /* Add a comma before all but the first. */
+    /* If there are only 2, use only an ampersand. */
+    /*  If there are 3+, use a comma and ampersand. */
+  }
+  div.single-article-about article aside dl div.metadata dd + dd:before {
+    content: ", ";
+  }
+  div.single-article-about article aside dl div.metadata dt + dd + dd:last-child:before {
+    content: " & ";
+  }
+  div.single-article-about article aside dl div.metadata dd + dd + dd:last-child:before {
+    content: ", & ";
+  }
+  div.single-article-about article aside dl div.metadata.no-comma dd {
+    margin-right: 15px;
+  }
+  div.single-article-about article aside dl div.metadata.no-comma dd + dd:before,
+  div.single-article-about article aside dl div.metadata.no-comma dt + dd + dd:last-child:before,
+  div.single-article-about article aside dl div.metadata.no-comma dd + dd + dd:last-child:before {
+    content: "";
+  }
+}
+div.single-article-about article section h1 {
+  font-size: 16px;
+  margin-top: 0px;
+  line-height: 1.5;
+}
+@media (min-width: 1200px) {
+  div.single-article-about article section {
+    margin-left: 160px;
+  }
+  div.single-article-about article section p,
+  div.single-article-about article section img {
+    /*margin-right: 335px;
+					margin-left: 160px;*/
+  }
+  div.single-article-about article section h1 {
+    width: 140px;
+    float: left;
+    margin: 0 0 0 -160px;
+    text-align: right;
+  }
+}
+@media (min-width: 1000px) {
+  div.single-article-about article section {
+    margin-right: 335px;
+  }
+}
+@media (min-width: 1200px) {
+  div.single-article-about article section + section {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  div.single-article-about article section {
+    margin-top: 20px;
+  }
+  div.single-article-about article section + section {
+    border-top: 1px solid #EEE;
+    padding-top: 20px;
+  }
+}

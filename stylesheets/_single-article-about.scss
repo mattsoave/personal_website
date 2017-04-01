@@ -1,0 +1,85 @@
+div.single-article-about {
+	article {
+		aside {
+			dl {
+				div.metadata {
+					@media (max-width: 999px) {
+						/*dd {
+							margin-right: 15px;
+						}*/
+						/* Add a comma before all but the first. */
+						dd + dd:before {
+							content: ", ";
+						}
+						
+						/* If there are only 2, use only an ampersand. */
+						dt + dd + dd:last-child:before {
+							content: " & ";
+						}
+						
+						/*  If there are 3+, use a comma and ampersand. */
+						dd + dd + dd:last-child:before {
+							content: ", & ";
+						}
+						
+						&.no-comma {
+							dd {
+								margin-right: 15px;
+							}
+							
+							dd + dd:before, 
+							dt + dd + dd:last-child:before,
+							dd + dd + dd:last-child:before {
+								content: "";
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		section {
+			
+			h1 {
+				font-size: 16px;
+				margin-top: 0px;
+				line-height: 1.5;
+			}
+		
+			@media (min-width: 1200px) {
+				margin-left: 160px;
+				
+				
+				p, img { 
+					/*margin-right: 335px;
+					margin-left: 160px;*/
+				}
+				h1 {
+					width: 140px;
+					float: left;
+					margin: 0 0 0 -160px;
+					text-align: right;
+				}
+			}
+			
+			@media (min-width: 1000px) {
+				margin-right: 335px;
+			}
+			
+			@media (min-width: 1200px) {
+				& + section {
+					margin-top: 40px;
+				}
+			}
+			
+			@media (max-width: 1199px) {
+				margin-top: 20px;
+				
+				& + section {
+					border-top: 1px solid #EEE;
+					padding-top: 20px; 
+				}
+			}
+		}
+	}
+}

@@ -1,4 +1,4 @@
-
+@import 'reset';
 
 /* Define block elements as border-box and relative */
 div, header, main, article, footer {
@@ -18,7 +18,7 @@ html, body {
 }
 
 body {
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	font-weight: 300;
 	color: #555;
 	font-size: 16px;

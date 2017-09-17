@@ -3,19 +3,6 @@
 <link rel="author" href="https://plus.google.com/u/0/103520907987098229443">
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700|Roboto+Slab:100,300,400,700|Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 <link href='stylesheets/main.css' rel='stylesheet' type='text/css'>
-<!--
-<link href='stylesheets/reset.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/clearfix.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/global.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/header.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/multiple-articles.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/multiple-articles-projects.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/single-article.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/single-article-project.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/single-article-writing.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/single-article-about.css' rel='stylesheet' type='text/css'>
-<link href='stylesheets/hide.css' rel='stylesheet' type='text/css'>
--->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/plugins/scrollTo-min.js"></script>
 <script src="js/main.js"></script>

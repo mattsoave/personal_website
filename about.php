@@ -5,7 +5,7 @@
 	if(!($id = $_GET["id"])) {
 		$id = 0;
 	}
-				
+				 
 
 	mysql_connect($hostname,$username, $password) OR DIE ('Unable to connect to database! Please try again later.');
 	mysql_select_db($dbname);

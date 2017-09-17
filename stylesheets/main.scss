@@ -1,4 +1,4 @@
-
+/* Variables */
 
 $textHeaders: #1a1a1a;
 $textBody: #666666;
@@ -7,6 +7,8 @@ $textLinks: #333;
 $colorHighlight: #f47c2c;
 $colorBackground: #eff3f6;
 $shadow: rgba(55, 101, 137, .04);
+
+/* Import partials */
 
 @import 'global';
 @import 'header';

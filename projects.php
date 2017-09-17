@@ -70,7 +70,7 @@
 							}
 				?>
 				<a href="project.php?id=<?php echo $row['id']; ?>">
-				<article style="background-image: url('assets/project_bgs/<?php echo $row['directory']; ?>.png');border-top-color: <?php echo $color1; ?>; border-bottom-color: <?php echo $color2; ?>;">
+				<article style="background-image: url('assets/project_bgs/<?php echo $row['directory']; ?>.jpg');border-top-color: <?php echo $color1; ?>; border-bottom-color: <?php echo $color2; ?>;">
 				<!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
 					<header style="background-color:<?php echo $color1; ?>;"><h1><?php echo $row['fullname']; ?></h1><p><?php echo $row['quicksummary']; ?></p></header>
 					<!--<?php echo $row['overview']; ?>-->
